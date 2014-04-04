@@ -117,7 +117,7 @@ test-cov: -pre-test-cov
 	@cd $(-RELEASE_DIR)
 	@cp package.json $(-RELEASE_DIR)
 
-	@cd $(-RELEASE_DIR) && PYTHON=`which python2.6` npm --color=false --registry=http://registry.npm.taobao.net install --production
+	@cd $(-RELEASE_DIR) && PYTHON=`which python2.6` npm --color=false --registry=http://registry.npmjs.org install --production
 
 
 release: -release-pre
@@ -127,7 +127,7 @@ release: -release-pre
 .-PHONY: default
 
 -npm-install:
-	@npm --color=false --registry=http://registry.npm.taobao.net install
+	@npm --color=false --registry=http://registry.npmjs.org install
 
 clean:
 	@echo 'clean'
