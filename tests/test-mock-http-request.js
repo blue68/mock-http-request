@@ -1,6 +1,5 @@
 var expect = require('expect.js');
-var request =  require('./lib/mock-http-request');
-var ep = require('event-pipe');
+var request =  require('../lib/mock-http-request');
 var Url = require('url');
 
 describe('mock-http-request', function(){
