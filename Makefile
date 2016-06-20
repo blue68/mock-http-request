@@ -77,7 +77,6 @@ test: -common-pre
 		--no-colors \
 		--ignore-leaks \
 		--reporter tap \
-		--require $(-COVERAGE_ENV) \
 		$(-COVERAGE_TESTS)
 
 test-rel: -release-pre
@@ -88,7 +87,6 @@ test-rel: -release-pre
 	@$(-BIN_MOCHA) \
 		--no-colors \
 		--reporter tap \
-		--require $(-RELEASE_ENV) \
 		$(-RELEASE_TESTS)
 
 test-cov: -pre-test-cov
@@ -98,7 +96,6 @@ test-cov: -pre-test-cov
 		--no-colors \
 		--ignore-leaks \
 		--reporter html-cov \
-		--require $(-COVERAGE_ENV) \
 		$(-COVERAGE_TESTS) > $(-COVERAGE_FILE)
 
 	@echo "test report saved \"$(-COVERAGE_FILE)\""
