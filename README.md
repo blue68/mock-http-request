@@ -1,11 +1,21 @@
-Mock-http-request
-================
-```
-    npm install mock-http-request
-```
+# mock-http-request  [![Build Status](https://travis-ci.org/blue68/mock-http-request.svg?branch=master)](https://travis-ci.org/blue68/mock-http-request)
+
+A simulation tool backend requests
+
+# Install
+
+Install using [npm](https://npmjs.org/package/mock-http-request).
 
 ```
-    var mockHttpRequest = require('mock-http-request');
+npm install mock-http-request --save-dev
+
+```
+
+# Usage
+
+```js
+
+var mockHttpRequest = require('mock-http-request');
     //下面代码为每个case中具体用法
     //正常请求配置
     var options = {
@@ -70,4 +80,6 @@ Mock-http-request
     afterEach(function(){
         mockHttpRequest.unmock();
     });
+
+
 ```

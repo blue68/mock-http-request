@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - 0.8.14
+branches:
+  only:
+    - master
+notifications:
+  email:
+    - chaoqiang.tian@gmail.com
